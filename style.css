@@ -1,0 +1,142 @@
+* {
+        box-sizing: border-box;
+        margin: 0;
+}
+
+body {
+        background: #343434;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+}
+
+header {
+        background: #212121;
+        color: #ccc;
+        width: 100%;
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        box-shadow: 0px 2px 19px rgba(0,0,0,0.8)
+}
+
+header h1 {
+        display: inline;
+        text-shadow: 0px 2px 19px red;
+}
+
+.container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.main {
+        background: gray;
+        width: 800px;
+        align-items: center;
+        border-radius: 12px;
+        padding: 2rem;
+        padding-left: 8rem;
+}
+
+.main h1 {
+        margin-bottom: 2rem;
+}
+
+.main > p {
+        text-align: center;
+        margin-bottom: 2rem;
+}
+
+form label {
+        font-size: 18px;
+        font-weight: 600;
+}
+
+#input {
+        appearance: textfield;
+        outline: none;
+        border: none;
+        padding: 0.4rem
+}
+
+.prevGuess {
+        display: flex;
+        padding-bottom: 1rem;
+}
+
+.prevGuess span {
+        margin-left: 0.5rem;
+}
+
+.submit-answer {
+        padding: 0.4rem;
+        background-color: #fff;
+        border-radius: 5px;
+        margin-bottom: 2rem;
+}
+
+.message {
+        margin-bottom: 2rem;
+        padding: 1rem;
+        font-size: 22px;
+}
+
+.GameOver {
+        background: #f00;
+}
+
+.won {
+       background: #0f0;
+}
+
+.hidden {
+        display: none;
+}
+
+.footer {
+        margin: 1rem;
+        color: #ccc;
+}
+
+.footer a {
+        text-decoration: none;
+        color: #fa3232;
+}
+
+@media(max-width: 550px) {
+        header h1 {
+
+                font-size: 1.5rem;
+        }
+        .container {
+                text-align: center;
+        }
+        .main {
+                width: 90%;
+                padding: 0.8rem;
+                text-align: center;
+        }
+        .main h1 {
+                font-size: 1.5rem;
+                text-align: center;
+        }
+        .form {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+        }
+        .submit-answer {
+                width: 50%;
+                margin: 1rem auto;
+        }
+        .restart {
+                padding: 1rem;
+                border: none;
+                border-radius: 12px;
+                font-size: 1.2rem;
+        }
+}
