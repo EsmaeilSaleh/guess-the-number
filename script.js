@@ -30,7 +30,8 @@ numberGenerator();
 input.focus();
 
 input.addEventListener("input", (e) => {
-  guess = Number(e.target.value);
+const entered = e.target.value
+  guess = Number(entered);
 });
 
 const updater = () => {
@@ -44,9 +45,9 @@ const updater = () => {
 };
 
 submit.addEventListener("click", (e) => {
-  if (guess === "" || guess === undefined) {
-    guess = 0;
-  }
+//if (guess === "" || guess === undefined) {
+//  guess = 0;
+// }
   if (count >= 1) {
     restart.classList = "restart";
   }
